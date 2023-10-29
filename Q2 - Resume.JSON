@@ -1,17 +1,15 @@
 //Resume in JSON format
 
-{
+const jsonString = {
     "basics": {
         "name": "valliyappan",
         "age": "28",
         "mail": "valliyappanramasamy610@gmail.com",
         "city": "trichy",
         }
-    },
 
-    {
-    "qualifications":{
-         "Degree": "B.E, Mechanical Engineering",
+    "qualifications": {
+         "Degree": "BE Mechanical Engineering",
          "Year of Passing": 2017,
          "CGPA": 7.88,
 
@@ -24,20 +22,18 @@
          "Percentage": 84,  
         
     }
-}
-    {
+    
         "Work Experience": {
             "Company Name": "Syrma Technology Pvt. Ltd.",
             "Position": "Line Supervisor",
             "Year of Experience": "One Year of Experience",
         }
-    }
-
-    {
+        
          "Personal Details": {
             "Date of Birth": 06-10-1995,
             "Contact Number": 9942246792,
             "Language Known": "English","Tamil",
          }
-
     };
+    const jsonObj = JSON.stringify(jsonString);
+    console.log(jsonObj);
